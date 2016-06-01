@@ -1,0 +1,14 @@
+C:\Users\pranalinarkar\Source\Repos\CSYE-6202-Spring2016\HospitalManagementProject\HospitalInformation\bin\Debug\HospitalInformation.dll
+C:\Users\pranalinarkar\Source\Repos\CSYE-6202-Spring2016\HospitalManagementProject\HospitalInformation\bin\Debug\HospitalInformation.pdb
+C:\Users\pranalinarkar\Source\Repos\CSYE-6202-Spring2016\HospitalManagementProject\HospitalInformation\obj\Debug\HospitalInformation.csprojResolveAssemblyReference.cache
+C:\Users\pranalinarkar\Source\Repos\CSYE-6202-Spring2016\HospitalManagementProject\HospitalInformation\obj\Debug\HospitalInformation.dll
+C:\Users\pranalinarkar\Source\Repos\CSYE-6202-Spring2016\HospitalManagementProject\HospitalInformation\obj\Debug\HospitalInformation.pdb
+C:\Users\pranalinarkar\Desktop\HospitalManagementProject\HospitalInformation\bin\Debug\HospitalInformation.dll
+C:\Users\pranalinarkar\Desktop\HospitalManagementProject\HospitalInformation\bin\Debug\HospitalInformation.pdb
+C:\Users\pranalinarkar\Desktop\HospitalManagementProject\HospitalInformation\obj\Debug\HospitalInformation.dll
+C:\Users\pranalinarkar\Desktop\HospitalManagementProject\HospitalInformation\obj\Debug\HospitalInformation.pdb
+C:\Users\pranalinarkar\Desktop\HospitalManagementProject\HospitalInformation\bin\Debug\log4net.dll
+C:\Users\pranalinarkar\Desktop\HospitalManagementProject\HospitalInformation\bin\Debug\log4net.xml
+C:\Users\pranalinarkar\Desktop\HospitalManagementProject\HospitalInformation\obj\Debug\HospitalInformation.csprojResolveAssemblyReference.cache
+C:\Users\pranalinarkar\Source\Repos\CSYE-6202-Spring2016\HospitalManagementProject\HospitalInformation\bin\Debug\log4net.dll
+C:\Users\pranalinarkar\Source\Repos\CSYE-6202-Spring2016\HospitalManagementProject\HospitalInformation\bin\Debug\log4net.xml

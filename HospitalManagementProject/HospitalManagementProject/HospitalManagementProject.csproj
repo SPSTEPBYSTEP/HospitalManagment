@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7CF77B4-3390-49D4-91E5-8BA505F58C80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HospitalManagementProject</RootNamespace>
+    <AssemblyName>HospitalManagementProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminWorkFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminWorkFlow.Designer.cs">
+      <DependentUpon>AdminWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentInfo.Designer.cs">
+      <DependentUpon>AppointmentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ConnectionDal.cs" />
+    <Compile Include="DAL\QueryDAL.cs" />
+    <Compile Include="DeleteAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAppointment.Designer.cs">
+      <DependentUpon>DeleteAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDoc.Designer.cs">
+      <DependentUpon>DeleteDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePatient.Designer.cs">
+      <DependentUpon>DeletePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorInfo.Designer.cs">
+      <DependentUpon>DoctorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorUpdate.Designer.cs">
+      <DependentUpon>DoctorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorWorkArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorWorkArea.Designer.cs">
+      <DependentUpon>DoctorWorkArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientInfo.Designer.cs">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientWorkArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientWorkArea.Designer.cs">
+      <DependentUpon>PatientWorkArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAppointment.Designer.cs">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePatient.Designer.cs">
+      <DependentUpon>UpdatePatient.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminWorkFlow.resx">
+      <DependentUpon>AdminWorkFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentInfo.resx">
+      <DependentUpon>AppointmentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAppointment.resx">
+      <DependentUpon>DeleteAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDoc.resx">
+      <DependentUpon>DeleteDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePatient.resx">
+      <DependentUpon>DeletePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorInfo.resx">
+      <DependentUpon>DoctorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorUpdate.resx">
+      <DependentUpon>DoctorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorWorkArea.resx">
+      <DependentUpon>DoctorWorkArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientInfo.resx">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientWorkArea.resx">
+      <DependentUpon>PatientWorkArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateAppointment.resx">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePatient.resx">
+      <DependentUpon>UpdatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HospitalInformation\HospitalInformation.csproj">
+      <Project>{5b2a5b25-3cce-40fe-9d9e-263666c04ad6}</Project>
+      <Name>HospitalInformation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Log4net.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
